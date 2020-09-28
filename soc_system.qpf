@@ -1,0 +1,7 @@
+################################################################################
+## Project       : Golden Hardware Reference Design
+## Hardware      : Arrow Chameleon96 by NovTech
+## Author        : Marcus Andrade <marcus@raetro.org>
+################################################################################
+QUARTUS_VERSION = "17.0"
+PROJECT_REVISION = "soc_system"
