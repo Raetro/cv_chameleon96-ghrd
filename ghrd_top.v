@@ -1,3 +1,5 @@
+// Copyright (c) 2020 Marcus Andrade
+// SPDX-License-Identifier: MIT
 //##############################################################################
 // Project       : Golden Hardware Reference Design
 // Hardware      : Arrow Chameleon96 by NovTech
