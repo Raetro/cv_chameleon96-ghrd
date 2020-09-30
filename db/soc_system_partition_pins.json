@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CV_HPS_2V5_GPIO_LED_RF1_via_FPGA",
+					"strict" : false
+				},
+				{
+					"name" : "CV_HPS_2V5_GPIO_LED_RF2_via_FPGA",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_ENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_HSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_VSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT23",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT22",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT21",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT20",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT19",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT15",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT14",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT13",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT12",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT11",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT10",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT7",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT6",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT5",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT4",
+					"strict" : false
+				},
+				{
+					"name" : "CV_FPGA_1V8_LCD_DAT3",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

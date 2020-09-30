@@ -1,0 +1,256 @@
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_vfr_controller:controller|state
+Name state.WAITING_END_FRAME state.SENDING_GO_AND_ENABLE_INTERRUPT state.SENDING_TYPE state.SENDING_WORDS state.SENDING_SAMPLES state.SENDING_ADDRESS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.SENDING_ADDRESS 0 0 0 0 0 1 1 
+state.SENDING_SAMPLES 0 0 0 0 1 0 1 
+state.SENDING_WORDS 0 0 0 1 0 0 1 
+state.SENDING_TYPE 0 0 1 0 0 0 1 
+state.SENDING_GO_AND_ENABLE_INTERRUPT 0 1 0 0 0 0 1 
+state.WAITING_END_FRAME 1 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_core:prc_core|state
+Name state.ENDING state.RUNNING state.WAITING state.IDLE 
+state.IDLE 0 0 0 0 
+state.WAITING 0 0 1 1 
+state.RUNNING 0 1 0 1 
+state.ENDING 1 0 0 1 
+
+State Machine - |ghrd_top|altera_edge_detector:pulse_debug_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd_top|altera_edge_detector:pulse_warm_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd_top|altera_edge_detector:pulse_cold_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[7].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[6].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[5].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[4].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[3].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[2].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[1].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|interrupt_latency_counter:interrupt_latency_counter_0|state_machine_counter:state_machine[0].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:mm_bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|alt_vip_cvo_core:cvo_core|alt_vip_cvo_stream_marker:stream_marker|state
+Name state.IDLE state.SEND_LINE state.MARK_STREAM 
+state.IDLE 0 0 0 
+state.MARK_STREAM 1 0 1 
+state.SEND_LINE 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|alt_vip_cvo_scheduler:scheduler|state
+Name state.MAIN__WAIT_RSP state.MAIN__VIB_SEND_PKT state.MAIN__STREAM_MARKER_SEND_LINE state.MAIN__INSERT_STREAM_MARKER state.MAIN__UPDATE_CTRL state.MAIN__IDLE state.INIT__DISCARD_PACKET_WAIT state.INIT__DISCARD_PACKET state.INIT__WAIT_FOR_FIRST_CTRL state.INIT__STOPPED 
+state.INIT__STOPPED 0 0 0 0 0 0 0 0 0 0 
+state.INIT__WAIT_FOR_FIRST_CTRL 0 0 0 0 0 0 0 0 1 1 
+state.INIT__DISCARD_PACKET 0 0 0 0 0 0 0 1 0 1 
+state.INIT__DISCARD_PACKET_WAIT 0 0 0 0 0 0 1 0 0 1 
+state.MAIN__IDLE 0 0 0 0 0 1 0 0 0 1 
+state.MAIN__UPDATE_CTRL 0 0 0 0 1 0 0 0 0 1 
+state.MAIN__INSERT_STREAM_MARKER 0 0 0 1 0 0 0 0 0 1 
+state.MAIN__STREAM_MARKER_SEND_LINE 0 0 1 0 0 0 0 0 0 1 
+state.MAIN__VIB_SEND_PKT 0 1 0 0 0 0 0 0 0 1 
+state.MAIN__WAIT_RSP 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|soc_system_alt_vip_cl_cvo_0_video_in:video_in|alt_vip_video_input_bridge_cmd:vid_back|state
+Name state.IDLE state.DISCARD state.SEND_PACKET 
+state.IDLE 0 0 0 
+state.SEND_PACKET 1 0 1 
+state.DISCARD 1 1 0 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|soc_system_alt_vip_cl_cvo_0_video_in:video_in|alt_vip_video_input_bridge_resp:vid_front|state
+Name state.SEND_PAD_LINE_PACKET state.SEND_EOP_RESPONSE state.SEND_FRAME_PACKET state.DISCARD state.SEND_LINE_PACKET state.NEW_LINE_PACKET state.SEND_USER_PACKET state.NEW_USER_PACKET state.NEW_CONTROL_CONTEXT_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 
+state.NEW_CONTROL_CONTEXT_PACKET 0 0 0 0 0 0 0 0 1 1 
+state.NEW_USER_PACKET 0 0 0 0 0 0 0 1 0 1 
+state.SEND_USER_PACKET 0 0 0 0 0 0 1 0 0 1 
+state.NEW_LINE_PACKET 0 0 0 0 0 1 0 0 0 1 
+state.SEND_LINE_PACKET 0 0 0 0 1 0 0 0 0 1 
+state.DISCARD 0 0 0 1 0 0 0 0 0 1 
+state.SEND_FRAME_PACKET 0 0 1 0 0 0 0 0 0 1 
+state.SEND_EOP_RESPONSE 0 1 0 0 0 0 0 0 0 1 
+state.SEND_PAD_LINE_PACKET 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|soc_system_alt_vip_cl_cvo_0_video_in:video_in|alt_vip_video_input_bridge_resp:vid_front|alt_vip_common_video_packet_decode:video_input|state
+Name state.SEND_PACKET state.SEND_PACKET_SOP state.CONTEXT_PACKET state.CONTROL_PACKET state.SINGLE_BEAT_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.SINGLE_BEAT_PACKET 0 0 0 0 1 1 
+state.CONTROL_PACKET 0 0 0 1 0 1 
+state.CONTEXT_PACKET 0 0 1 0 0 1 
+state.SEND_PACKET_SOP 0 1 0 0 0 1 
+state.SEND_PACKET 1 0 0 0 0 1 
+
+State Machine - |ghrd_top|soc_system:u0|soc_system_alt_vip_cl_cvo_0:alt_vip_cl_cvo_0|alt_vip_cvo_core:cvo_core|alt_vip_cvo_statemachine:statemachine|state_int
+Name state_int.CLEAR_GO state_int.STOPPING state_int.INSERT_ANC state_int.WAIT_FOR_ANC state_int.WAIT_FOR_SYNCH state_int.SYNCHED state_int.FIND_MODE state_int.FINISH_FRAME state_int.FIND_SOP state_int.INIT_SET_GO state_int.INIT_FIND_SOP state_int.IDLE 
+state_int.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+state_int.INIT_FIND_SOP 0 0 0 0 0 0 0 0 0 0 1 1 
+state_int.INIT_SET_GO 0 0 0 0 0 0 0 0 0 1 0 1 
+state_int.FIND_SOP 0 0 0 0 0 0 0 0 1 0 0 1 
+state_int.FINISH_FRAME 0 0 0 0 0 0 0 1 0 0 0 1 
+state_int.FIND_MODE 0 0 0 0 0 0 1 0 0 0 0 1 
+state_int.SYNCHED 0 0 0 0 0 1 0 0 0 0 0 1 
+state_int.WAIT_FOR_SYNCH 0 0 0 0 1 0 0 0 0 0 0 1 
+state_int.WAIT_FOR_ANC 0 0 0 1 0 0 0 0 0 0 0 1 
+state_int.INSERT_ANC 0 0 1 0 0 0 0 0 0 0 0 1 
+state_int.STOPPING 0 1 0 0 0 0 0 0 0 0 0 1 
+state_int.CLEAR_GO 1 0 0 0 0 0 0 0 0 0 0 1 

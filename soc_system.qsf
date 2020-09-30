@@ -58,7 +58,7 @@ set_global_assignment -name USE_DLL_FREQUENCY_FOR_DQS_DELAY_CHAIN ON
 # Assembler Assignments
 ################################################################################
 set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
-set_global_assignment -name GENERATE_RBF_FILE OFF
+set_global_assignment -name GENERATE_RBF_FILE ON
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 ################################################################################
 # SignalTap II Assignments
